@@ -83,9 +83,9 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_supply_string << "#{supply.to_s.capitalize!}"
       else
         (supply.length - 1).times do |x|
-          holiday_supply_string << "#{supply[x].to_s.capitalize!}, "
+          holiday_supply_string << "#{supply[x].capitalize!}, "
         end
-        holiday_supply_string << "#{supply[-1].to_s.capitalize!}"
+        holiday_supply_string << "#{supply[-1].capitalize!}"
       end
       puts holiday_supply_string
     end
